@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import bg from "../assets/tecro/mobilebg.webp";
 import video from "../assets/video.mp4";
 import logoTECRO from "../assets/SVG/logo_TECRO.svg";
-import link from "../assets/SVG/footer/link.svg";
+
+import poster from "../assets/tecro/mobilebg.webp";
 
 const PHRASES = [
 	"Our clients cover a wide range of activities, from payment industry to geolocation processing.",
@@ -50,6 +51,7 @@ export const FirstPage = () => {
 					autoPlay
 					muted
 					loop
+					poster={poster}
 					src={
 						video || "https://www.tecro.dev/media/uploads/video/Tecro_web_video_1-baja_2n4iqAI.mp4"
 					}
