@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	html,
+	body {
+		@apply bg-[#0f0f0f] text-[#ccc] font-lato scroll-smooth;
+	}
+}
+
+body::-webkit-scrollbar {
+	height: 100%;
+	width: 8px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+	background: #0f0f0f00;
+	border-left: 2px rgb(23 23 23) solid;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #ccc;
+	border-radius: 20px;
+}
