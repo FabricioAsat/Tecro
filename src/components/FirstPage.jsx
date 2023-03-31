@@ -30,24 +30,16 @@ export const FirstPage = () => {
 	return (
 		<article className="flex items-center justify-center h-screen">
 			<div className="absolute h-full w-full">
-				<div className="flex flex-col gap-y-5 items-center justify-center absolute w-full h-full bg-black/75 z-10 px-10">
+				<div className="flex flex-col gap-y-5 items-center justify-center absolute w-full h-full bg-black/75 z-20 px-10">
 					<img src={logoTECRO} alt="Logo Tecro" className="w-full max-w-xs" />
 					<p
-						className={`text-background font-medium text-xl md:text-2xl xl:text-3xl text-center max-w-xl italic`}
+						className={`text-white font-medium text-xl md:text-2xl xl:text-3xl text-center max-w-xl italic`}
 					>
 						{PHRASES[indexPhrase]}
 					</p>
-					<a
-						href="https://www.tecro.dev/"
-						target="_blank"
-						rel="noreferrer nofollow"
-						className="bg-[#0f0f0f] text-sky-400 font-extrabold px-5 py-2 my-2 rounded-lg"
-					>
-						Go to original page ⇒
-					</a>
 				</div>
 				<video
-					className="h-full w-full object-cover hidden md:block"
+					className="h-full w-full object-cover hidden md:block select-none"
 					autoPlay
 					muted
 					loop

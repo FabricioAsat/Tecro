@@ -77,7 +77,7 @@ function Card({ title, description, img, keywords }) {
 		<div
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
-			className={`flex flex-col max-w-md pt-5 px-5 w-full bg-neutral-900 rounded-lg pb-3 brightness-90 hover:brightness-100 transition-all duration-300 ease-out`}
+			className={`flex flex-col max-w-md pt-5 px-5 w-full bg-[#0f0f0f] rounded-lg pb-3 brightness-90 hover:brightness-100 transition-all duration-300 ease-out`}
 		>
 			<img
 				src={img}
@@ -91,7 +91,7 @@ function Card({ title, description, img, keywords }) {
 
 			<h4
 				className={`bg-[#0f0f0f] w-full max-w-[210px] transition-colors duration-300 ease-out text-center px-5 py-1 text-xl font-bold rounded-lg mx-auto -translate-y-1/2 shadow-lg shadow-[#0f0f0f95] ${
-					isHovered ? "text-white" : ""
+					isHovered ? "text-white" : "text-[#eee]"
 				}`}
 			>
 				{title}
@@ -103,7 +103,7 @@ function Card({ title, description, img, keywords }) {
 					{keywords.map((word, index) => (
 						<span
 							key={index}
-							className="bg-neutral-800 rounded-md flex gap-x-1 items-center px-2 py-1"
+							className="bg-neutral-900 rounded-md flex gap-x-1 items-center px-2 py-1"
 						>
 							<h6 className="font-bold italic text-sm text-[#f28c00]">{word}</h6>
 						</span>

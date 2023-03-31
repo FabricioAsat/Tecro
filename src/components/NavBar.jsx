@@ -24,12 +24,9 @@ export const NavBar = () => {
 
 	return (
 		<>
-			<header className="fixed z-50 top-0 left-0 w-full h-full max-h-16 backdrop-blur-md border-b border-neutral-800">
+			<header className="fixed z-50 top-0 left-0 w-full h-full max-h-16 bg-[#0f0f0f] border-b border-neutral-800">
 				<div className="flex items-center justify-between py-3 px-5 w-full h-full max-w-7xl mx-auto">
-					<a
-						href="#root"
-						className="flex items-center text-[#ccc] hover:text-white transition-colors duration-300 px-2 py-1"
-					>
+					<a href="#root" className="flex items-center px-2 py-1">
 						<picture className="w-24">
 							<img src={logoTECRO} alt="Logo Tecro" className="w-full" />
 						</picture>
@@ -38,11 +35,11 @@ export const NavBar = () => {
 					<span className="flex items-center gap-x-3">
 						<Links
 							setHambButton={setHambButton}
-							className={"hidden md:flex flex-row text-[#ccc] justify-center items-center text-sm"}
+							className={"hidden md:flex flex-row text-white justify-center items-center text-sm"}
 						/>
 						<a
 							href="mailto:info@tecro.dev"
-							className="w-10 p-1 h-full hover:brightness-200 transition-all duration-500"
+							className="w-10 p-1 h-full hover:brightness-75 transition-all duration-200"
 						>
 							<img src={mail} alt="Mail" className="select-none" />
 						</a>
@@ -51,7 +48,7 @@ export const NavBar = () => {
 							href="https://www.linkedin.com/company/tecro-dev/"
 							target={"_blank"}
 							rel="noreferrer nofollow"
-							className="w-10 p-1 h-full hover:brightness-200 transition-all duration-500"
+							className="w-10 p-1 h-full hover:brightness-75 transition-all duration-200"
 						>
 							<img src={linkedin} alt="Linkedin" className="select-none" />
 						</a>
@@ -60,7 +57,7 @@ export const NavBar = () => {
 							href="https://www.instagram.com/tecro_dev/"
 							target={"_blank"}
 							rel="noreferrer nofollow"
-							className="w-10 p-1 h-full hover:brightness-200 transition-all duration-500"
+							className="w-10 p-1 h-full hover:brightness-75 transition-all duration-200"
 						>
 							<img src={instagram} alt="Instagram" className="select-none" />
 						</a>
@@ -105,7 +102,7 @@ function Links({ className, setHambButton }) {
 			<a
 				onClick={() => setHambButton(false)}
 				href="#why-us"
-				className="flex gap-x-2 items-center py-1 px-3 hover:brightness-200 hover:text-white transition-all duration-500 font-bold"
+				className="flex gap-x-2 items-center py-1 px-3 hover:text-[#ccc] transition-all duration-200 font-bold"
 			>
 				<picture className="block md:hidden w-5">
 					<img src={whyUs} alt="Why us" className="select-none" />
@@ -115,7 +112,7 @@ function Links({ className, setHambButton }) {
 			<a
 				onClick={() => setHambButton(false)}
 				href="#our-values"
-				className="flex gap-x-2 items-center py-1 px-3 hover:brightness-200 hover:text-white transition-all duration-500 font-bold"
+				className="flex gap-x-2 items-center py-1 px-3 hover:text-[#ccc] transition-all duration-200 font-bold"
 			>
 				<picture className="block md:hidden w-5">
 					<img src={ourValues} alt="Our values" className="select-none" />
@@ -125,7 +122,7 @@ function Links({ className, setHambButton }) {
 			<a
 				onClick={() => setHambButton(false)}
 				href="#our-clients"
-				className="flex gap-x-2 items-center py-1 px-3 hover:brightness-200 hover:text-white transition-all duration-500 font-bold"
+				className="flex gap-x-2 items-center py-1 px-3 hover:text-[#ccc] transition-all duration-200 font-bold"
 			>
 				<picture className="block md:hidden w-5">
 					<img src={ourClients} alt="Our clients" className="select-none" />
@@ -135,7 +132,7 @@ function Links({ className, setHambButton }) {
 			<a
 				onClick={() => setHambButton(false)}
 				href="#contacts"
-				className="flex gap-x-2 items-center py-1 px-3 hover:brightness-200 hover:text-white transition-all duration-500 font-bold"
+				className="flex gap-x-2 items-center py-1 px-3 hover:text-[#ccc] transition-all duration-200 font-bold"
 			>
 				<picture className="block md:hidden w-5">
 					<img src={contactUs} alt="Contact us" className="select-none" />

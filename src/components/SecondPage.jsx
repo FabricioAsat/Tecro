@@ -73,7 +73,7 @@ export const SecondPage = () => {
 
 function Card({ title, description, svg }) {
 	return (
-		<section className="flex flex-col gap-y-4 p-8 overflow-hidden border rounded-xl border-neutral-800 w-full max-w-sm min-h-[64px] h-full hover:shadow-md hover:shadow-neutral-800/50 hover:backdrop-brightness-150 transition-all duration-500">
+		<section className="flex flex-col gap-y-4 p-8 overflow-hidden border-y-2 border-x rounded-xl border-neutral-800 w-full max-w-sm min-h-[64px] h-full hover:shadow-md hover:shadow-neutral-800/50 hover:backdrop-brightness-150 transition-all duration-300">
 			<img src={svg} alt="" className="w-12 select-none" />
 			<h4 className="font-bold text-white text-lg">{title}</h4>
 			<p className="italic">{description}</p>

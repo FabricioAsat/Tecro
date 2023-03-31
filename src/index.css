@@ -6,6 +6,8 @@
 	html,
 	body {
 		@apply bg-[#0f0f0f] text-[#ccc] font-lato scroll-smooth;
+
+		background-image: url("/public/pettern.webp");
 	}
 }
 
