@@ -24,7 +24,7 @@ export const NavBar = () => {
 
 	return (
 		<>
-			<header className="fixed z-50 top-0 left-0 w-full h-full max-h-16 backdrop-blur-sm border-b border-neutral-800">
+			<header className="fixed z-50 top-0 left-0 w-full h-full max-h-16 backdrop-blur-sm bg-[#0f0f0f90] border-b border-neutral-800">
 				<div className="flex items-center justify-between py-3 px-5 w-full h-full max-w-7xl mx-auto">
 					<a href="#root" className="flex items-center px-2 py-1">
 						<picture className="w-24">
